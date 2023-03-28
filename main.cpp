@@ -12,7 +12,7 @@ int main() {
     List lst(countSort);
     CreateList(lst);
     int size = 1000;
-    while(!StopSorting(lst)) {
+    while(!StopSorting(lst) && size < 1000000000) {
         listnode *p = lst.head;
         fprintf(flog, "%.10d\t", size);
         for (int i = 0; i < lst.length; ++i) {
